@@ -16,8 +16,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-
     }
 
     body {
@@ -39,12 +37,13 @@
     <div id="playerCard" class="cotainer">
         <div class="row">
             <div class="col-sm-6 offset-sm-3" id="mcbc">
-                <div class="card">
-                    <div class="card-header">Enter names</div>
+                <div class="card bg-warning">
+                    <div class="card-header alert alert-info">Enter names</div>
                     <div class="card-body">
-                        <input id="p1" class="input form-control" placeholder="Enter Name"></input><br>
-                        <input id="p2" class="input form-control" placeholder="Enter Name"></input><br>
-                        <button class="btn btn-primary w-100" onclick="startGame()">Start Game</button>
+                        <input value="Rahul Mehata 💋💖" id="p1" class="input form-control"
+                            placeholder="Enter player1 Name"></input><br>
+                        <input id="p2" class="input form-control    " placeholder="Enter player2 Name {S}"></input><br>
+                        <button class="btn btn-primary w-100 " onclick="startGame()">Start Game</button>
                     </div>
                 </div>
             </div>
@@ -55,9 +54,9 @@
 
     <div class="container d-none" id="gameCard">
         <div class="row">
-            <div class="col-sm-10 offset-sm-1">
+            <div class="col-sm-10 offset-sm-1 bg-info">
                 <div class="card">
-                    <div class="card-header">Tic Tac Toe</div>
+                    <div class="card-header">Tic Tac Toe by "Rahul Mehata💖💖" </div>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-3">
@@ -85,7 +84,7 @@
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between">
                                             <h6>Draw</h6>
-                                            <strong id="drawCount">0</strong>
+                                            <strong id="drawCount" class="text-danger">0</strong>
                                         </div>
                                     </div>
                                 </div>
@@ -95,7 +94,7 @@
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between">
                                             <h6>Total</h6>
-                                            <strong id="totalCount">0</strong>
+                                            <strong id="totalCount" class="text-success">0</strong>
                                         </div>
                                     </div>
                                 </div>
@@ -149,5 +148,6 @@
 
 
 </body>
+<!-- xml http request homework -->
 
 </html>
